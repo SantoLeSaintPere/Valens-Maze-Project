@@ -59,7 +59,6 @@ public class CameraBehaviour : MonoBehaviour
     {
         cam.SetActive(true);
         cam2.SetActive(false);
-        Debug.Log("Follow");
         transform.position = Vector3.MoveTowards(transform.position, target.position, speed);
 
     }
@@ -68,7 +67,6 @@ public class CameraBehaviour : MonoBehaviour
     {
         cam.SetActive(false);
         cam2.SetActive(true);
-        Debug.Log("Reset");
         transform.position = Vector3.MoveTowards(transform.position, originalPos, resetSpeed);
     }
 }

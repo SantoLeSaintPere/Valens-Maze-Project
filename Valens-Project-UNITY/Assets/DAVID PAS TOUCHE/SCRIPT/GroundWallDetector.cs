@@ -23,7 +23,6 @@ public class GroundWallDetector : MonoBehaviour
     void CheckGround()
     {
         RaycastHit hit;
-        Debug.DrawRay(groundDetectorTr.position , Vector3.down * range, Color.green);
         isGrounded = Physics.Raycast(groundDetectorTr.position , Vector3.down, out hit, range, groundLayer);
 
     }
@@ -32,7 +31,12 @@ public class GroundWallDetector : MonoBehaviour
     {
 
         RaycastHit hit;
-        Debug.DrawRay(transform.position,Vector3.forward * range, Color.red);
         isWalled = Physics.Raycast(bodyTr.position, bodyTr.forward, out hit, range, groundLayer);
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Debug.DrawRay(transform.position, Vector3.forward * range, Color.red);
+        Debug.DrawRay(groundDetectorTr.position, Vector3.down * range, Color.green);
     }
 }
