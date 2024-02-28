@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/MainMenu.unity
     guid: d6a4fd0ec35eca840b6f91fcd0d12b31
   - enabled: 1
-    path: Assets/VALENS FOLDER/TEST-SCENE-VALENS8.unity
-    guid: b84388c8d71edd04982a0f6becd3cdcf
+    path: Assets/SceneDimanche9.unity
+    guid: 209193f4d09ba1045a0adbfc4eb4bb07
   m_configObjects: {}
